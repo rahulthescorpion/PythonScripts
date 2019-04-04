@@ -1,0 +1,120 @@
+{
+  "definitions": {
+    "DELETE": {
+      "type": "object"
+    }, 
+    "GET": {
+      "type": "object"
+    }, 
+    "PATCH": {
+      "type": "object"
+    }, 
+    "POST": {
+      "type": "object"
+    }, 
+    "PUT": {
+      "type": "object"
+    }
+  }, 
+  "info": {
+    "description": "powered by Flasgger", 
+    "termsOfService": "/tos", 
+    "title": "A swagger API", 
+    "version": "0.0.1"
+  }, 
+  "paths": {
+    "/DELETE": {
+      "delete": {
+        "description": "This is using docstrings for specifications.<br/>", 
+        "parameters": [
+          {
+            "default": "all", 
+            "in": "body", 
+            "name": "file_name", 
+            "required": false, 
+            "type": "application/json"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "it will delete the file with the data given"
+          }
+        }, 
+        "summary": "DELETE endpoint will delete the file."
+      }
+    }, 
+    "/GET": {
+      "get": {
+        "description": "This is using docstrings for specifications.<br/>", 
+        "responses": {
+          "200": {
+            "description": "it will return python"
+          }
+        }, 
+        "summary": "GET endpoint returning a string."
+      }
+    }, 
+    "/PATCH": {
+      "patch": {
+        "description": "This is using docstrings for specifications.<br/>", 
+        "parameters": [
+          {
+            "default": "all", 
+            "in": "body", 
+            "name": "PATCH", 
+            "required": false, 
+            "type": "string"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "Data appended succcessfully.."
+          }
+        }, 
+        "summary": "PATCH endpoint append the data into the file."
+      }
+    }, 
+    "/POST": {
+      "post": {
+        "description": "This is using docstrings for specifications.<br/>", 
+        "parameters": [
+          {
+            "default": "all", 
+            "in": "body", 
+            "name": "POST", 
+            "required": false, 
+            "type": "string"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "it will create a file with the data given"
+          }
+        }, 
+        "summary": "POST endpoint create a file with the data given."
+      }
+    }, 
+    "/PUT": {
+      "put": {
+        "description": "This is using docstrings for specifications.<br/>", 
+        "parameters": [
+          {
+            "default": "all", 
+            "in": "body", 
+            "name": "PUT", 
+            "required": false, 
+            "type": "string"
+          }
+        ], 
+        "responses": {
+          "200": {
+            "description": "it will over writes the file"
+          }
+        }, 
+        "summary": "PUT over writes the data."
+      }
+    }
+  }, 
+  "swagger": "2.0"
+}
+
